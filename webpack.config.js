@@ -5,6 +5,11 @@ const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
+  resolve: {
+    fallback: {
+      path: require.resolve('path-browserify'),
+    }
+  },
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, './dist'),
@@ -13,9 +18,10 @@ module.exports = {
     hot: true,
     port: 8080,
   },
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
+    chunkFilename: '[id].bundle_[chunkhash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
@@ -39,6 +45,14 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|jpg|jpeg)$/i,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'images',
+          name: '[name].[ext]'
+        },
       },
     ],
   },
