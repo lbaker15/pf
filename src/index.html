@@ -1,41 +1,286 @@
 <html>
     <head>
-        <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="grid">
-            <div class="grid1">
-               One
-            </div>
-            <div class="grid2">
-                <div class="innergrid2">
-                    <div class="left2">
-
-                    </div>
-                    <div class="right2">
-
+            <div id="clickCondition" class="grid1">
+                <div class="topSection">
+                    <svg id="blob1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="rgb(230, 204, 255)" d="M45.3,-65.3C59.1,-61.7,70.7,-49.7,71.6,-36.1C72.4,-22.5,62.5,-7.5,60.1,8.5C57.6,24.6,62.6,41.6,57.2,51.6C51.7,61.7,35.8,64.8,21,67.1C6.2,69.5,-7.6,71.1,-21.9,69.3C-36.3,67.5,-51.2,62.4,-60.6,52.2C-70,41.9,-74,26.6,-74.4,11.8C-74.9,-3,-71.9,-17.3,-64.2,-27.4C-56.6,-37.5,-44.2,-43.5,-32.7,-48.1C-21.2,-52.7,-10.6,-56,2.6,-60.1C15.8,-64.1,31.6,-69,45.3,-65.3Z" transform="translate(100 100)" />
+                    </svg>
+                    <svg id="blob2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="rgb(230, 204, 255)" d="M31.1,-42.4C44.8,-32.9,63.4,-29.8,71.8,-19.6C80.2,-9.4,78.4,7.7,71.1,20.8C63.7,34,50.8,43,38,54.3C25.2,65.7,12.6,79.2,-2.5,82.7C-17.7,86.2,-35.4,79.7,-46.1,67.7C-56.8,55.7,-60.6,38.3,-63.9,22.1C-67.3,6,-70.3,-8.9,-68.9,-25.2C-67.5,-41.4,-61.6,-59,-49.3,-69.1C-37.1,-79.1,-18.6,-81.5,-4.9,-74.8C8.7,-68,17.4,-52,31.1,-42.4Z" transform="translate(100 100)" />
+                    </svg>
+                    <div class="text">
+                        <h1>
+                            Hi I'm Elle: a <span>front and back end</span> developer based in the UK.
+                            I love incorporating <span>creative ideas</span> into app design.
+                            This is what I do now and some <span>things Ive done before.</span>
+                        </h1>
                     </div>
                 </div>
+                <div class="divider">
+                    <h1>Projects</h1>
+                </div>
+               <div class="flex">
+               <div class="list-item">
+                    <a href="http://bwsite.s3-website.eu-west-2.amazonaws.com/contact.html">MatterJs Contact Form</a>
+                    <video id="video" width="320" height="240">
+                        <source id="loadMe" data-parent="contactform.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+               </div>
+               <div class="list-item">
+                    <a href="http://dgb-digital.infinityfreeapp.com/">All around the world</a>
+                    <video id="video" width="320" height="240">
+                        <source id="loadMe" data-parent="earth.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+               </div>
+               <div class="list-item">
+                    <a href="https://lbaker15.github.io/Shaders2/">WebGL kaleidoscope</a>
+                    <video id="video" width="320" height="240">
+                        <source id="loadMe" data-parent="kaleidoscope.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+               </div>
+               <div class="list-item">
+                    <a href="http://my-site-lbaker15.s3-website.eu-west-2.amazonaws.com/">Demo marketing site</a>
+                    <video id="video" width="320" height="240">
+                        <source id="loadMe" data-parent="site.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+               </div>
+               <div class="list-item">
+                    <a href="http://dgb-digital.infinityfreeapp.com/contact.html">WebGL contact form</a>
+                    <video id="video" width="320" height="240">
+                        <source id="loadMe" data-parent="webgl.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="list-item">
+                    <a href="http://red-umbrella.flywheelsites.com/">Image hover ripple</a>
+                    <video id="video" width="320" height="240">
+                        <source id="loadMe" data-parent="ripple.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="list-item">
+                    <a href="http://look2020.42web.io/">Demo Photography Site</a>
+                    <video id="video" width="320" height="240">
+                         <source autoplay="true" id="loadMe" data-parent="canvas.webm" type="video/webm">
+                         Your browser does not support the video tag.
+                     </video>
+                </div>
+               </div>
             </div>
-            <div class="grid3">
-                <div class="flex3">
-                    <div class="innerflex1"></div>
-                    <div class="innerflex2"></div>
-                    <div class="innerflex3"></div>
+            <div class="siteSection">
+                <div class="myDiv">Some sites I have worked on:
+                    <div class="hello">
+                    <a href="" class="textCircle">
+                        <svg viewBox="0 0 200 200">
+                          <path id="circle" fill="transparent" 
+                          d="
+                          M 100, 100
+                          m -75, 0
+                          a 75,75 0 1,0 150,0
+                          a 75,75 0 1,0 -150,0
+                          "/>
+                          <text width="200">
+                              <textPath fill="#8173ff" xlink:href="#circle">
+                                  Take a look round <img src="/images/34_large.png" />
+                              </textPath>
+                          </text>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+                <div class="myDiv2">
+                    <ul>
+                        <!-- <li>https://lbaker15.github.io/PinningSite//</li> -->
+                        <!-- <li>
+                            <a href="http://www.peqlit.com/">http://www.peqlit.com/</a>
+                            <p>A small website for an IT support company developed using wordpress</p>
+                        </li> -->
+                        <li>
+                            <a href="https://naturdo.myshopify.com/">https://naturdo.myshopify.com/</a>                       
+                            <p>An ecommerce site for a cosmetic brand developed using shopify</p>
+                        </li>
+                        <li>
+                            <a href="http://photo-site-123.s3-website.eu-west-2.amazonaws.com/"> 
+                                http://photo-site-123.s3-website.eu-west-2.amazonaws.com/
+                            </a>                       
+                            <p>
+                                A showcase photography site built using greensock animation.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="http://alice-dowell-photography.co.uk/">http://alice-dowell-photography.co.uk/</a> 
+                            <p>A photography portfolio developed using webpack and greensock animation</p>
+                        </li>
+                        <li>
+                            <a href="http://abdivibes.bws.digital/">http://abdivibes.bws.digital/</a> 
+                            
+                        </li>
+                        <li>
+                            <a href="http://peqlit.bws.digital/">http://peqlit.bws.digital/</a> 
+                            <p> A small website for an IT support company developed using wordpress </p>
+                        </li>
+                        
+                    </ul>
                 </div>
             </div>
-            <div class="grid4">
-                <div class="innergrid4">
-                    <div class="left4">
-
+            <div class="softwareSection">
+                <div class="myDiv">
+                    Some apps I have developed: 
+                    <div class="flexy">
+                        <img src="/images/HT.png" />
                     </div>
-                    <div class="right4">
+                </div>
+                <div class="myDiv2">
+                    <ul class="theUl">
+                        <!-- <li>https://lbaker15.github.io/PinningSite//</li> -->
+                        <!-- https://github.com/lbaker15/hha -->
+                        <li class="theLi">
+                            <a href="https://github.com/lbaker15/hha">
+                                https://github.com/lbaker15/hha
+                            </a>
+                            <p>This is an app where users are able to search mental health providers in Canada. 
+                                There is also a backend where administrators and editors can add/edit health care providers to the database.
+                                (Still in development)
+                                <br>
+                                <div>Skills used:</div>
+                                <ul>
+                                    <li>Google Maps API</li>
+                                    <li>Node/Express backend</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li class="theLi">
+                            <a href="https://devconnect12.herokuapp.com">
+                                https://devconnect12.herokuapp.com/
+                            </a>
+                            <p>This is an app where developers are able to register, create posts and share their github profiles. 
+                                <br>
+                                <div>Skills used:</div>
+                                <ul>
+                                    <li>React/Redux</li>
+                                    <li>Node/Express backend</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li class="theLi">
+                            <a href="https://lbaker15.github.io/ReactPhoto//#/">https://lbaker15.github.io/ReactPhoto//#/</a>
+                            <p>This is a small app where users can view their recent instagram insights, schedule image uploads and view any scheduled images. To use this app you will need a business instagram account with a linked business facebook account. 
+                                <br>
+                                <div>Skills used:</div>
+                                <ul>
+                                    <li>React/Redux</li>
+                                    <li>Drag and drop api</li>
+                                    <li>Handling image uploading front and back end (back end uses multer & aws s3 bucket)</li>
+                                    <li>JWT's and cookies for authentication</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li class="theLi">
+                            <a href="https://lbaker15.github.io/HostingRatherGame/#/">
+                                https://lbaker15.github.io/HostingRatherGame/#/</a>
+                            <p>This is a game where users are able to login and vote on 'would you rather' questions posted by other users. Users have the opportunity to vote on existing questions, add new questions and view the leaderboard.  
+                                <br>
+                                <div>Skills used:</div>
+                                <ul>
+                                    <li>React/Redux</li>
+                                    <li>Firebase</li>
+                                    <li>The create-react-app framework</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li class="theLi">
+                            <a href="https://github.com/lbaker15/Udacity-React-Redux-Practice-Reddit-Clone">
+                                https://github.com/lbaker15/Udacity-React-Redux-Practice-Reddit-Clone</a>
+                            <p>This is an app that allows users to create posts under various categories. Users are able to post and edit posts, upvote/downvote posts, add comments to existing posts, vote on comments and filter posts via category. Instructions for cloning this project are available in the readme.
+                                <br>
+                                <div>Skills used:</div>
+                                <ul>
+                                    <li>React/Redux</li>
+                                </ul>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stackSection">
+                <div class="myDiv">The stack/languages I use:
+                    <div class="eyes">
+                        <div class="outerEye"> 
+                            <div class="innerEye">
+                                <div class="white"></div>
+                            </div>
+                        </div>
+                        <div class="outerEye"> 
+                            <div class="innerEye">
+                                <div class="white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myDiv2">
+                    <ul>
+                        <li>
+                            Frontend:
+                            <span>HTML/CSS</span>
+                            <span>WebGL</span>
+                        </li>
+                        <li>
+                            Javascript Libraries: 
+                            <span> React & Redux </span>
+                            <span> VueJs </span>
+                            <span> Greensock </span>
+                            <span> ThreeJS </span>
+                            <span> MatterJS </span>
+                            <span> PixiJS </span>
+                            <!-- <span> WebGL </span> -->
+                        </li>
+                        <li>
+                            CI: 
+                            <span>Git</span>
+                            <span>Buddy</span>
+                            <span>AWS</span>
+                        </li>
+                        <li>
+                            Build/Deployment: 
+                            <span>Webpack</span>
+                            <span>AWS S3 & EC2</span>
+                            <span>Heroku</span>
+                        </li>
+                        <li>Databases: 
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                            <span>Firebase</span>
+                        </li>
+                        <li>Backend: 
+                            <span>NodeJs</span>
+                            <span>Express</span>
+                            <span>PHP</span>
+                        </li>
+                        <li>CMS:
+                            <span>WordPress</span>
+                            <span>Shopify</span>
+                            <span>Joomla</span>
+                            <span>Gatsby & Contentful CMS</span>
+                        </li>
+                    </ul>
+
+                    <div class="contactDetails">
+                        <div><span>Codepen:</span> <a href="https://codepen.io/lb94">https://codepen.io/lb94</a></div>
+                        <div><span>Github:</span> https://github.com/lbaker15 </div>
                         
                     </div>
+
                 </div>
-            </div>
-            <div class="grid5">
-                5
             </div>
         </div>
     </body>
