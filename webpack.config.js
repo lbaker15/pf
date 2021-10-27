@@ -43,9 +43,19 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.(css|scss)$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
+      // {
+      //   test: /\.scss$/,
+      //   use: [
+      //     {
+      //         loader: 'file-loader',
+      //         options: { outputPath: 'css/', name: '[name].min.css'}
+      //     },
+      //     'sass-loader'
+      // ]
+      // },
       {
         test: /\.(png|jpe?g|gif|jpg|jpeg)$/i,
         loader: 'file-loader',
