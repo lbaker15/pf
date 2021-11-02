@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-.component {
-    
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+button {
+    @apply rounded-full bg-gray-900 text-center py-12 px-4 text-white
 }

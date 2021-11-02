@@ -1,16 +1,52 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-@font-face {
-  font-family: 'Sprat';
-  src: url('../fonts/sprat.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+.max-w-600 {
+    max-width: 600px;
+    width: 600px;
 }
-$black: rgb(49, 49, 49);
-$purple: rgb(211, 163, 255);
-$yellow: rgb(255, 244, 97);
-$aqua: rgb(167, 255, 255);
-$font: #000;
- 
+.max-h-600 {
+    max-height: 600px;
+}
+.-top-50 {
+    top: -200px;
+}
+.-left-50 {
+    left: -200px;
+}
+.-bottom-50 {
+    margin-bottom: -180px;
+}
+.-right-50 {
+    margin-right: -170px;
+}
+.rotate-300 {
+    transform: rotate(300deg);
+}
+.rotate-20 {
+    transform: rotate(40deg);
+}
+.text-26 {
+    font-size: clamp(14px, 58px, 7.6vw);
+}
+@tailwind utilities {
+    @variants responsive {
+        .text-30 {
+            font-size: clamp(14px, 70px, 11vw);
+        }
+    }
+}
+.text-span span {
+    @apply p-2 rounded-xl
+}
+$color1: red; $color2: yellow; $color3: blue;
+.text-span span:nth-child(1) {
+    background: $color1;
+}
+.text-span span:nth-child(2) {
+    background: $color2;
+}
+.text-span span:nth-child(3) {
+    background: $color3;
+}

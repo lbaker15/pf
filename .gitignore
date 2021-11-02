@@ -1,3 +1,4 @@
-//https://www.taniarascia.com/how-to-use-webpack/
-/node_modules
-node_modules
+/.env
+/.idea
+/vendor
+.DS_Store
