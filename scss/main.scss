@@ -1,6 +1,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'Sprat';
+  src: url('../fonts/sprat.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 .max-w-600 {
     max-width: 600px;
@@ -40,7 +48,7 @@
 .text-span span {
     @apply p-2 rounded-xl
 }
-$color1: red; $color2: yellow; $color3: blue;
+$color1: rgb(255, 243, 132); $color2: rgb(138, 228, 255); $color3: rgb(176, 147, 255);
 .text-span span:nth-child(1) {
     background: $color1;
 }
@@ -50,3 +58,99 @@ $color1: red; $color2: yellow; $color3: blue;
 .text-span span:nth-child(3) {
     background: $color3;
 }
+.pd-container {
+    width: 90vw; margin-left: auto; margin-right: auto;
+}
+.bg-card {
+    background: rgba(0,0,0,0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    font-family: 'Manrope';
+}
+.h-500 {
+    height: 600px;
+}
+.h-700 {
+    height: 900px;
+}
+.heading-1 {
+    font-size: 30px; font-weight: 500;
+    @apply mb-4;
+}
+.font-500 {
+    font-weight: 500;
+}
+.grid-rows-4-custom {
+    grid-template-rows: 700px 950px 700px 1000px ;
+}
+.gap-10 {
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .grid-rows-4-custom {
+        grid-template-rows: 750px 950px 1200px 1400px ;
+    }
+    .h-700 {
+        height: 1300px;
+    }
+    .h-500 {
+        height: 1200px;
+    }
+}
+@media (max-width: 620px) {
+    .grid-rows-4-custom {
+        grid-template-rows: 650px 950px 1400px 1400px ;
+    }
+    .h-700 {
+        height: 1500px;
+    }
+}
+@media (max-width: 450px) {
+    .h-700 {
+        height: 1600px;
+    }
+}
+
+
+
+
+$font: #000;
+.my-flex {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-top: 50px;
+    .list-item {
+      color: $font;
+      font-family: Sprat;
+      font-variation-settings: "wght" 20;
+      font-size: 50px;
+      width: 650px;
+      font-weight: 300;
+      text-align: center;
+      z-index: 10;
+      border-bottom: 1px solid $font;
+      // border-top: 1px solid red;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      user-select: none;
+      list-style: none;
+      transform-origin: center;
+      a {
+        width: 650px;
+        cursor: pointer;
+        color: $font;
+        z-index: 10;
+        pointer-events: none;
+        text-decoration: none;
+      }
+      video {
+          display: none;
+          pointer-events: none;
+      }
+    }
+}
+  
